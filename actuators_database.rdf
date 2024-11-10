@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="http://example.org/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/actuator/4">
+    <rdf:type rdf:resource="http://example.org/actuator"/>
+    <rdfs:label>Pnevmatic actuator 2</rdfs:label>
+    <ns1:inputVoltage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ns1:inputVoltage>
+    <ns1:type rdf:resource="http://example.org/type/pnevmo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/actuator/1">
+    <rdf:type rdf:resource="http://example.org/actuator"/>
+    <rdfs:label>Electrical actuator 1</rdfs:label>
+    <ns1:inputVoltage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</ns1:inputVoltage>
+    <ns1:type rdf:resource="http://example.org/type/electro"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/actuator/3">
+    <rdf:type rdf:resource="http://example.org/actuator"/>
+    <rdfs:label>Electrical actuator 2</rdfs:label>
+    <ns1:inputVoltage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ns1:inputVoltage>
+    <ns1:type rdf:resource="http://example.org/type/electro"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/actuator/2">
+    <rdf:type rdf:resource="http://example.org/actuator"/>
+    <rdfs:label>Pnevmatic actuator 1</rdfs:label>
+    <ns1:inputVoltage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</ns1:inputVoltage>
+    <ns1:type rdf:resource="http://example.org/type/pnevmo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/type/pnevmo">
+    <rdf:type rdf:resource="http://example.org/type"/>
+    <rdfs:label>Pnevmatic actuator</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/type/electro">
+    <rdf:type rdf:resource="http://example.org/type"/>
+    <rdfs:label>Electrical actuator</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,30 @@
+@prefix ns1: <http://example.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/actuator/1> a ns1:actuator ;
+    rdfs:label "Electrical actuator 1" ;
+    ns1:inputVoltage 5 ;
+    ns1:type <http://example.org/type/electro> .
+
+<http://example.org/actuator/2> a ns1:actuator ;
+    rdfs:label "Pnevmatic actuator 1" ;
+    ns1:inputVoltage 5 ;
+    ns1:type <http://example.org/type/pnevmo> .
+
+<http://example.org/actuator/3> a ns1:actuator ;
+    rdfs:label "Electrical actuator 2" ;
+    ns1:inputVoltage 2 ;
+    ns1:type <http://example.org/type/electro> .
+
+<http://example.org/actuator/4> a ns1:actuator ;
+    rdfs:label "Pnevmatic actuator 2" ;
+    ns1:inputVoltage 2 ;
+    ns1:type <http://example.org/type/pnevmo> .
+
+<http://example.org/type/electro> a ns1:type ;
+    rdfs:label "Electrical actuator" .
+
+<http://example.org/type/pnevmo> a ns1:type ;
+    rdfs:label "Pnevmatic actuator" .
+

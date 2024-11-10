@@ -1,0 +1,30 @@
+@prefix ns1: <http://example.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/transistor/1> a ns1:transistor ;
+    rdfs:label "Bipolar junction transistor 1" ;
+    ns1:maxCollectCurrent 5 ;
+    ns1:type <http://example.org/type/bipolar> .
+
+<http://example.org/transistor/2> a ns1:transistor ;
+    rdfs:label "Field effect transistor 1" ;
+    ns1:maxCollectCurrent 10 ;
+    ns1:type <http://example.org/type/field> .
+
+<http://example.org/transistor/3> a ns1:transistor ;
+    rdfs:label "Bipolar junction transistor 2" ;
+    ns1:maxCollectCurrent 15 ;
+    ns1:type <http://example.org/type/bipolar> .
+
+<http://example.org/transistor/4> a ns1:transistor ;
+    rdfs:label "Field effect transistor 2" ;
+    ns1:maxCollectCurrent 12 ;
+    ns1:type <http://example.org/type/field> .
+
+<http://example.org/type/bipolar> a ns1:type ;
+    rdfs:label "Bipolar junction transistor" .
+
+<http://example.org/type/field> a ns1:type ;
+    rdfs:label "Field effect transistor" .
+

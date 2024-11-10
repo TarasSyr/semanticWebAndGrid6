@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="http://example.org/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/type/bipolar">
+    <rdf:type rdf:resource="http://example.org/type"/>
+    <rdfs:label>Bipolar junction transistor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/transistor/4">
+    <rdf:type rdf:resource="http://example.org/transistor"/>
+    <rdfs:label>Field effect transistor 2</rdfs:label>
+    <ns1:maxCollectCurrent rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</ns1:maxCollectCurrent>
+    <ns1:type rdf:resource="http://example.org/type/field"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/transistor/1">
+    <rdf:type rdf:resource="http://example.org/transistor"/>
+    <rdfs:label>Bipolar junction transistor 1</rdfs:label>
+    <ns1:maxCollectCurrent rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</ns1:maxCollectCurrent>
+    <ns1:type rdf:resource="http://example.org/type/bipolar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/transistor/2">
+    <rdf:type rdf:resource="http://example.org/transistor"/>
+    <rdfs:label>Field effect transistor 1</rdfs:label>
+    <ns1:maxCollectCurrent rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</ns1:maxCollectCurrent>
+    <ns1:type rdf:resource="http://example.org/type/field"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/transistor/3">
+    <rdf:type rdf:resource="http://example.org/transistor"/>
+    <rdfs:label>Bipolar junction transistor 2</rdfs:label>
+    <ns1:maxCollectCurrent rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</ns1:maxCollectCurrent>
+    <ns1:type rdf:resource="http://example.org/type/bipolar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/type/field">
+    <rdf:type rdf:resource="http://example.org/type"/>
+    <rdfs:label>Field effect transistor</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>
