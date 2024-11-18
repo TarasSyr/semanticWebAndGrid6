@@ -1,0 +1,25 @@
+@prefix ns1: <http://example.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/pcb/1> a ns1:PCB ;
+    rdfs:label "PCB 1" ;
+    ns1:layers 4 ;
+    ns1:usedInCircuit <http://example.org/circuit/1> .
+
+<http://example.org/pcb/2> a ns1:PCB ;
+    rdfs:label "PCB 2" ;
+    ns1:layers 2 ;
+    ns1:usedInCircuit <http://example.org/circuit/2> .
+
+<http://example.org/pcb/3> a ns1:PCB ;
+    rdfs:label "PCB 3" ;
+    ns1:layers 6 ;
+    ns1:usedInCircuit <http://example.org/circuit/1> .
+
+<http://example.org/circuit/2> a ns1:Circuit ;
+    rdfs:label "Circuit 2" .
+
+<http://example.org/circuit/1> a ns1:Circuit ;
+    rdfs:label "Circuit 1" .
+
